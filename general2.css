@@ -1,0 +1,132 @@
+/* Font Definitions */
+@font-face {
+    font-family: 'Montserrat';
+    src: url("Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat-b';
+    src: url("Montserrat-Black.ttf");
+}
+
+/* Animation */
+@keyframes colorChange {
+    0% { background: rgb(183, 14, 121); }
+    25% { background: rgb(213, 37, 66); }
+    50% { background: rgb(183, 14, 121); }
+    75% { background: rgb(44, 42, 207); }
+    100% { background: rgb(183, 14, 121); }
+}
+
+/* Page Layout */
+html {
+    background: #ffa500; /* Orange background */
+    animation: colorChange 10s infinite; /* Background color animation */
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff; /* White text color */
+}
+
+/* Flags */
+#flags {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#flags img {
+    width: auto;
+    max-height: 40px;
+    filter: drop-shadow(0 0 3px #00000055);
+    margin: 5px;
+}
+
+/* Content Section */
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px; /* Adjusted margin top for better alignment */
+}
+
+/* Title */
+#title {
+    font-size: 40px;
+    margin: 10px;
+}
+
+/* Subtitle */
+#subtitle {
+    font-size: 20px; /* Decreased font size for subtitle */
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+/* Form */
+#form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+#input {
+    width: 400px;
+    padding: 10px;
+    font-size: 18px; /* Decreased font size for input */
+    text-align: center;
+}
+
+/* Go Button */
+#go {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ffffff; /* Added background color */
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer; /* Added cursor style */
+}
+
+#go:hover {
+    background-color: #d5d8d4; /* Light gray on hover */
+}
+
+/* Result */
+#result {
+    height: 150px; /* Decreased height of result box */
+    font-size: 36px; /* Increased font size for better visibility */
+    text-align: center;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+/* Feedback Section */
+#feedback {
+    display: flex;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+#feedback nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(218, 218, 218, 0.351);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px; /* Adjusted width of feedback navigation */
+    margin: 0 5px; /* Added horizontal margin for spacing */
+}
+
+#feedback nav:hover {
+    background-color: rgba(218, 218, 218, 0.505);
+    cursor: pointer; /* Added cursor style */
+}
+
+#feedback nav span {
+    margin: 0 5px; /* Added horizontal margin for spacing */
+}
